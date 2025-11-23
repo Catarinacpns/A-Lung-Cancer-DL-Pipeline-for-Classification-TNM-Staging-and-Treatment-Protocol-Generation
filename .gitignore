@@ -6,9 +6,9 @@ TCIA, DICOM, YOLO, MODELS, NOTEBOOKS
 
 ==========================================
 
-—- DATA (NÃO SUBIR PARA GITHUB) —-
+—- DATA —-
 
-data/raw/ data/processed/ data/external/ data/tmp/ .dcm .dicom .xml .nii
+data/raw/ data/processed/ data/external/ data/sampled/ .dcm .dicom .xml .nii
 .nii.gz .nrrd
 
 —- MODELS E PESOS —-
