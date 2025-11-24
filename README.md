@@ -1,1 +1,1 @@
-# A-Lung-Cancer-DL-Pipeline-for-Classification-TNM-Staging-and-Treatment-Protocol-Generation
+# Lung-Cancer-Pipeline-for-Classification-and-Treatment-Protocol-Generation
