@@ -153,7 +153,6 @@ def augment_yolo_images_train(input_dir, output_dir, target_samples, target_size
         print(f"  Total images for Class {class_id} after augmentation: {count}")
     
     
-'''_______________________________________________________________________________________________________________'''
 
 def augment_yolo_images_val(input_dir, output_dir, target_samples, target_size=(512, 512)):
     """

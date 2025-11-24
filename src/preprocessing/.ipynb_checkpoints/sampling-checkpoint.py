@@ -1,3 +1,9 @@
+import numpy as np
+import pandas as pd
+
+from IPython.display import display  # usado na função check_balance
+
+
 # Function to sample data with focus on maximizing number of images while keeping all categories
 def relaxed_stratified_sample(df, max_images, max_memory, stage_columns, seed=1):
     # Set a seed for reproducibility
