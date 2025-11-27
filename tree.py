@@ -4,7 +4,7 @@ import os
 
 # Folders to exclude completely
 EXCLUDE_FOLDERS = {
-    "raw", "NSCLC_Radiomics", "Annotation", "sampled", "yolo", "trial_results", "TNM", "trial_results_40epochs", "trial_results_SGD_StepLR", "trial_results_SGD_StepLR_50epochs", "trial_results_SGD_StepLR_50epochs_2", "trial_results_SGD","test_YOLO_orig(16batch)", "test_YOLOorig_nano", "test_YOLOorig_nano(16batch)_E_G_2", "test_YOLOorig_nano(16batch)_E_G_last", "test_YOLOorig_nano(32batch)_E_G", "test_YOLOorig_small(16batch)", "test_YOLOorig_small(16batch)_E_G_2", "test_YOLOorig_small(16batch)_E_G_best", "test_YOLOorig_small(32batch)_E_G", "test_lung_cancer_detection_ResNet50", "test_YOLOorig_nano(16batch)_E_G", "__pycache__"
+    "raw", "NSCLC_Radiomics", "Annotation", "sampled", "yolo", "trial_results", "TNM", "trial_results_40epochs", "trial_results_SGD_StepLR", "trial_results_SGD_StepLR_50epochs", "trial_results_SGD_StepLR_50epochs_2", "trial_results_SGD","test_YOLO_orig(16batch)", "test_YOLOorig_nano", "test_YOLOorig_nano(16batch)_E_G_2", "test_YOLOorig_nano(16batch)_E_G_last", "test_YOLOorig_nano(32batch)_E_G", "test_YOLOorig_small(16batch)", "test_YOLOorig_small(16batch)_E_G_2", "test_YOLOorig_small(16batch)_E_G_best", "test_YOLOorig_small(32batch)_E_G", "test_lung_cancer_detection_ResNet50", "test_YOLOorig_nano(16batch)_E_G", "__pycache__", "dataset_tnm",
 }
 
 # File extensions to exclude

@@ -5,8 +5,10 @@ Repository Structure:
 │   ├── yolo   [contains files inside]
 ├── data
 │   ├── NSCLC-Radiomics-Lung1.clinical-version3-Oct-2019.csv
+│   ├── TMN_LUNGPETDX_NSCLC_finaldataset.csv
 │   ├── dataset
 │   │   ├── final_images_dataset.pkl
+│   ├── dataset_tnm   [contains files inside]
 │   ├── metadata.csv
 │   ├── metadata_sampled.csv
 │   ├── raw   [contains files inside]
@@ -15,6 +17,8 @@ Repository Structure:
 │   ├── yolo   [contains files inside]
 ├── docs
 ├── models
+│   ├── resnet50
+│   │   ├── multimodal_resnet50.py
 │   ├── yolo   [contains files inside]
 │   ├── yolo_resnet
 ├── notebooks
@@ -30,7 +34,7 @@ Repository Structure:
 │   ├── 02_resnet50_tnm_staging
 │   │   ├── 01_data_processing_TNM_stage.ipynb
 │   │   ├── 02_image_processing_TNM_stage.ipynb
-│   │   ├── 03_resnet50_TMN-Copy1.ipynb
+│   │   ├── 03_resnet50_TMN.ipynb
 │   ├── 03_llm_treatment_generation
 │   │   ├── 01_LLM_preprocessing-Copy1.ipynb
 │   │   ├── 02_LLM_evaluation-Copy2.ipynb
@@ -61,7 +65,10 @@ Repository Structure:
 │   │   ├── resnet50
 │   │   │   ├── datasets
 │   │   │   │   ├── lung_cancer_dataset.py
+│   │   │   │   ├── lung_cancer_multimodal.py
+│   │   │   ├── eval_multimodal_resnet50.py
 │   │   │   ├── eval_resnet50.py
+│   │   │   ├── train_multimodal_resnet50.py
 │   │   │   ├── train_resnet50.py
 │   │   ├── yolo   [contains files inside]
 │   ├── optimization
@@ -72,6 +79,7 @@ Repository Structure:
 │   │   │   ├── objective_sgd.py
 │   │   │   ├── objective_sgd_steplr.py
 │   │   │   ├── objective_sgd_steplr_intensive_search.py
+│   │   │   ├── objective_tnm.py
 │   │   ├── optuna_results
 │   │   │   ├── TNM   [contains files inside]
 │   │   │   ├── best_hyperparameters_40epochs.json
