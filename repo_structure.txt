@@ -1,0 +1,138 @@
+Repository Structure:
+
+├── README.md
+├── configs
+│   ├── yolo   [contains files inside]
+├── data
+│   ├── NSCLC-Radiomics-Lung1.clinical-version3-Oct-2019.csv
+│   ├── dataset
+│   │   ├── final_images_dataset.pkl
+│   ├── metadata.csv
+│   ├── metadata_sampled.csv
+│   ├── raw   [contains files inside]
+│   ├── sampled   [contains files inside]
+│   ├── statistics_clinical.xlsx
+│   ├── yolo   [contains files inside]
+├── docs
+├── models
+│   ├── yolo   [contains files inside]
+│   ├── yolo_resnet
+├── notebooks
+│   ├── 01_yolov8_cancer_classification
+│   │   ├── 01_LUNGPETCT_data_preprocessing.ipynb
+│   │   ├── 02_LUNGPETCT_image_preprocessing.ipynb
+│   │   ├── 03_NSLC_image_preprocessing.ipynb
+│   │   ├── 04_NSLC_data_preprocessing.ipynb
+│   │   ├── 05_preprocessing_LUNGPET_NSCLC.ipynb
+│   │   ├── 06_resnet50_optimizing.ipynb
+│   │   ├── 07_yolov8_model_training.ipynb
+│   │   ├── 08_yolov8_model_eval.ipynb
+│   ├── 02_resnet50_tnm_staging
+│   │   ├── 01_data_processing_TNM_stage.ipynb
+│   │   ├── 02_image_processing_TNM_stage.ipynb
+│   │   ├── 03_resnet50_TMN-Copy1.ipynb
+│   ├── 03_llm_treatment_generation
+│   │   ├── 01_LLM_preprocessing-Copy1.ipynb
+│   │   ├── 02_LLM_evaluation-Copy2.ipynb
+│   ├── pipeline_classification_and_treatment.ipynb
+├── repo_structure.ipynb
+├── repo_structure.txt
+├── results
+│   ├── yolo_test
+│   │   ├── test_YOLO_orig(16batch)   [contains files inside]
+│   │   ├── test_YOLOorig_nano(16batch)_E_G   [contains files inside]
+│   │   ├── test_YOLOorig_nano(16batch)_E_G_2   [contains files inside]
+│   │   ├── test_YOLOorig_nano(16batch)_E_G_last   [contains files inside]
+│   │   ├── test_YOLOorig_nano(32batch)_E_G   [contains files inside]
+│   │   ├── test_YOLOorig_small(16batch)   [contains files inside]
+│   │   ├── test_YOLOorig_small(16batch)_E_G_2   [contains files inside]
+│   │   ├── test_YOLOorig_small(16batch)_E_G_best   [contains files inside]
+│   │   ├── test_YOLOorig_small(32batch)_E_G   [contains files inside]
+│   │   ├── test_lung_cancer_detection_ResNet50   [contains files inside]
+├── scripts
+├── src
+│   ├── augmentation
+│   │   ├── __pycache__   [contains files inside]
+│   │   ├── augmentation_utils.py
+│   │   ├── augmentation_yolo.py
+│   ├── evaluation
+│   ├── modeling
+│   │   ├── llms
+│   │   ├── resnet50
+│   │   │   ├── datasets
+│   │   │   │   ├── lung_cancer_dataset.py
+│   │   │   ├── eval_resnet50.py
+│   │   │   ├── train_resnet50.py
+│   │   ├── yolo   [contains files inside]
+│   ├── optimization
+│   │   ├── loaders
+│   │   │   ├── data_loader.py
+│   │   ├── objectives
+│   │   │   ├── objective_generic.py
+│   │   │   ├── objective_sgd.py
+│   │   │   ├── objective_sgd_steplr.py
+│   │   │   ├── objective_sgd_steplr_intensive_search.py
+│   │   ├── optuna_results
+│   │   │   ├── TNM   [contains files inside]
+│   │   │   ├── best_hyperparameters_40epochs.json
+│   │   │   ├── best_hyperparameters_SGD.json
+│   │   │   ├── best_hyperparameters_SGD_StepLR.json
+│   │   │   ├── best_hyperparameters_SGD_StepLR_50epochs.json
+│   │   │   ├── best_hyperparameters_SGD_StepLR_50epochs_2.json
+│   │   │   ├── best_hyperparameters_objective_generic.json
+│   │   │   ├── trial_results   [contains files inside]
+│   │   │   ├── trial_results_40epochs   [contains files inside]
+│   │   │   ├── trial_results_SGD   [contains files inside]
+│   │   │   ├── trial_results_SGD_StepLR   [contains files inside]
+│   │   │   ├── trial_results_SGD_StepLR_50epochs   [contains files inside]
+│   │   │   ├── trial_results_SGD_StepLR_50epochs_2   [contains files inside]
+│   │   ├── optuna_results_TNM   [contains files inside]
+│   │   ├── utils
+│   │   │   ├── reproducibility.py
+│   ├── preprocessing
+│   │   ├── __pycache__   [contains files inside]
+│   │   ├── dataset_building.py
+│   │   ├── dicom_io.py
+│   │   ├── image_preprocessing.py
+│   │   ├── rtstruct
+│   │   │   ├── __pycache__   [contains files inside]
+│   │   │   ├── rtstruct_batch_processing.py
+│   │   │   ├── rtstruct_io.py
+│   │   │   ├── rtstruct_parsing.py
+│   │   │   ├── rtstruct_to_yolo.py
+│   │   │   ├── rtstruct_visualization.py
+│   │   ├── sampling.py
+│   │   ├── uid_mapping.py
+│   │   ├── xml_parsing.py
+│   │   ├── yolo_conversion.py
+│   ├── splitting
+│   │   ├── __pycache__   [contains files inside]
+│   │   ├── dataset_splitting.py
+│   ├── statistics
+│   │   ├── __pycache__   [contains files inside]
+│   │   ├── patient_label_statistics.py
+│   ├── training
+│   │   ├── ResNet50
+│   │   │   ├── final_training
+│   │   │   │   ├── ResNet50_final_model_1.pth
+│   │   │   │   ├── ResNet50_final_model_2.pth
+│   │   │   │   ├── ResNet50_final_model_4.pth
+│   │   │   ├── final_training_TMN
+│   │   │   │   ├── ResNet50_52
+│   │   │   │   │   ├── ResNet50_final_model_TMN_52.pth
+│   │   │   │   ├── ResNet50_9
+│   │   │   │   │   ├── ResNet50_final_model_TMN_9.pth
+│   │   │   │   │   ├── plots_9
+│   │   │   │   ├── ResNet50_final_model_TMN_dropout_15.pth
+│   │   │   │   ├── ResNet50_final_model_TMN_dropout_35.pth
+│   ├── utils
+│   │   ├── __pycache__   [contains files inside]
+│   │   ├── extract_number.py
+│   │   ├── file_utils.py
+│   │   ├── subject_utils.py
+│   ├── visualization
+│   │   ├── __pycache__   [contains files inside]
+│   │   ├── patient_visualization.py
+│   │   ├── plot_bboxes.py
+│   │   ├── yolo_visualization.py
+├── tree.py
