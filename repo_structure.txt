@@ -53,13 +53,11 @@ Repository Structure:
 │   │   ├── test_YOLOorig_small(16batch)_E_G_best   [contains files inside]
 │   │   ├── test_YOLOorig_small(32batch)_E_G   [contains files inside]
 │   │   ├── test_lung_cancer_detection_ResNet50   [contains files inside]
-├── scripts
 ├── src
 │   ├── augmentation
 │   │   ├── __pycache__   [contains files inside]
 │   │   ├── augmentation_utils.py
 │   │   ├── augmentation_yolo.py
-│   ├── evaluation
 │   ├── modeling
 │   │   ├── llms
 │   │   ├── resnet50
@@ -70,7 +68,23 @@ Repository Structure:
 │   │   │   ├── eval_resnet50.py
 │   │   │   ├── train_multimodal_resnet50.py
 │   │   │   ├── train_resnet50.py
-│   │   ├── yolo   [contains files inside]
+│   ├── nlp
+│   │   ├── api
+│   │   │   ├── config.py
+│   │   │   ├── gemini_2flash.py
+│   │   │   ├── gpt4omini.py
+│   │   ├── prompt
+│   │   │   ├── prompt.py
+│   │   ├── rag
+│   │   │   ├── chromadb.py
+│   │   │   ├── chunking.py
+│   │   │   ├── embeddings.py
+│   │   │   ├── embeddings_openai.py
+│   │   │   ├── embeddings_utils.py
+│   │   │   ├── rag_pipeline.py
+│   │   │   ├── retrieval.py
+│   │   ├── utils
+│   │   │   ├── text_cleaning.py
 │   ├── optimization
 │   │   ├── loaders
 │   │   │   ├── data_loader.py
@@ -102,6 +116,9 @@ Repository Structure:
 │   │   ├── dataset_building.py
 │   │   ├── dicom_io.py
 │   │   ├── image_preprocessing.py
+│   │   ├── nlp
+│   │   │   ├── pdf_preprocessing.py
+│   │   │   ├── web_scraping_utils.py
 │   │   ├── rtstruct
 │   │   │   ├── __pycache__   [contains files inside]
 │   │   │   ├── rtstruct_batch_processing.py
