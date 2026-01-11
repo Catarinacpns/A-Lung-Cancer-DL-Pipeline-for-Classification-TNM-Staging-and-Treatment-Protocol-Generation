@@ -5,80 +5,6 @@ Repository Structure:
 │   ├── yolo   [contains files inside]
 ├── data
 │   ├── LLM
-│   │   ├── Evaluation
-│   │   │   ├── Final_Eval_GPT
-│   │   │   │   ├── before
-│   │   │   │   │   ├── classification_report.csv
-│   │   │   │   │   ├── confusion_matrix_report.csv
-│   │   │   │   │   ├── metrics_and_confusion_matrix.csv
-│   │   │   │   │   ├── ragas_summary.csv
-│   │   │   │   │   ├── repeated_evaluation_results.csv
-│   │   │   │   │   ├── results_summary.csv
-│   │   │   │   ├── classification_report.csv
-│   │   │   │   ├── confusion_matrix_report.csv
-│   │   │   │   ├── metrics_and_confusion_matrix.csv
-│   │   │   │   ├── ragas_summary.csv
-│   │   │   │   ├── repeated_evaluation_results.csv
-│   │   │   │   ├── results_summary.csv
-│   │   │   ├── Final_Eval_Gemini
-│   │   │   │   ├── before
-│   │   │   │   │   ├── classification_report.csv
-│   │   │   │   │   ├── confusion_matrix_report.csv
-│   │   │   │   │   ├── metrics_and_confusion_matrix.csv
-│   │   │   │   │   ├── ragas_summary.csv
-│   │   │   │   │   ├── repeated_evaluation_results.csv
-│   │   │   │   │   ├── results_summary.csv
-│   │   │   │   ├── classification_report.csv
-│   │   │   │   ├── confusion_matrix_report.csv
-│   │   │   │   ├── metrics_and_confusion_matrix.csv
-│   │   │   │   ├── ragas_summary.csv
-│   │   │   │   ├── repeated_evaluation_results.csv
-│   │   │   │   ├── results_summary.csv
-│   │   │   ├── Final_eval
-│   │   │   │   ├── GeminiCombinedGemini
-│   │   │   │   │   ├── classification_report.csv
-│   │   │   │   │   ├── confusion_matrix_report.csv
-│   │   │   │   │   ├── metrics_and_confusion_matrix.csv
-│   │   │   │   │   ├── ragas_summary.csv
-│   │   │   │   │   ├── repeated_evaluation_results.csv
-│   │   │   │   │   ├── repeated_evaluation_results_GeminiCombinedGemini.csv
-│   │   │   │   │   ├── repeated_evaluation_results_GeminiCombinedGemini_fixed.csv
-│   │   │   │   │   ├── results_summary.csv
-│   │   │   │   ├── OpenAIBM25Gemini
-│   │   │   │   │   ├── classification_report.csv
-│   │   │   │   │   ├── confusion_matrix_report.csv
-│   │   │   │   │   ├── metrics_and_confusion_matrix.csv
-│   │   │   │   │   ├── ragas_summary.csv
-│   │   │   │   │   ├── repeated_evaluation_results.csv
-│   │   │   │   │   ├── repeated_evaluation_results_OpenAIBM25Gemini.csv
-│   │   │   │   │   ├── repeated_evaluation_results_OpenAIBM25Gemini_fixed.csv
-│   │   │   │   │   ├── results_summary.csv
-│   │   │   │   ├── OpenAICombinedGemini
-│   │   │   │   │   ├── classification_report.csv
-│   │   │   │   │   ├── confusion_matrix_report.csv
-│   │   │   │   │   ├── metrics_and_confusion_matrix.csv
-│   │   │   │   │   ├── ragas_summary.csv
-│   │   │   │   │   ├── repeated_evaluation_results.csv
-│   │   │   │   │   ├── repeated_evaluation_results_OpenAICombinedGemini.csv
-│   │   │   │   │   ├── repeated_evaluation_results_OpenAICombinedGemini_fixed.csv
-│   │   │   │   │   ├── results_summary.csv
-│   │   │   │   ├── repeated_evaluation_results_MiniLMCombinedGemini.csv
-│   │   │   ├── GPT
-│   │   │   │   ├── GPT_results.csv
-│   │   │   │   ├── classification_report.csv
-│   │   │   │   ├── confusion_matrix.csv
-│   │   │   │   ├── evaluation_summary.csv
-│   │   │   │   ├── repeated_evaluation_results.csv
-│   │   │   │   ├── repeated_evaluation_results.csv.zip   [contains files inside]
-│   │   │   │   ├── repeated_evaluation_results_fixed.csv
-│   │   │   │   ├── repeated_evaluation_results_fixed.csv.zip   [contains files inside]
-│   │   │   │   ├── retrieval_strategy_comparison.csv
-│   │   │   ├── Gemini
-│   │   │   │   ├── Gemini_results.csv
-│   │   │   │   ├── repeated_evaluation_results.csv
-│   │   │   │   ├── repeated_evaluation_results_fixed.csv
-│   │   │   │   ├── repeated_evaluation_results_fixed.csv.zip   [contains files inside]
-│   │   │   ├── LLMs Evaluation.xlsx
 │   │   ├── Lung_Cancer_Treatment_Stages_Final.csv
 │   │   ├── embedings
 │   │   │   ├── ZIP
@@ -110,6 +36,82 @@ Repository Structure:
 │   ├── statistics_clinical.xlsx
 │   ├── yolo   [contains files inside]
 ├── docs
+├── evaluation
+│   ├── Final_Eval_GPT
+│   │   ├── before
+│   │   │   ├── classification_report.csv
+│   │   │   ├── confusion_matrix_report.csv
+│   │   │   ├── metrics_and_confusion_matrix.csv
+│   │   │   ├── ragas_summary.csv
+│   │   │   ├── repeated_evaluation_results.csv
+│   │   │   ├── results_summary.csv
+│   │   ├── classification_report.csv
+│   │   ├── confusion_matrix_report.csv
+│   │   ├── metrics_and_confusion_matrix.csv
+│   │   ├── ragas_summary.csv
+│   │   ├── repeated_evaluation_results.csv
+│   │   ├── results_summary.csv
+│   ├── Final_Eval_Gemini
+│   │   ├── before
+│   │   │   ├── classification_report.csv
+│   │   │   ├── confusion_matrix_report.csv
+│   │   │   ├── metrics_and_confusion_matrix.csv
+│   │   │   ├── ragas_summary.csv
+│   │   │   ├── repeated_evaluation_results.csv
+│   │   │   ├── results_summary.csv
+│   │   ├── classification_report.csv
+│   │   ├── confusion_matrix_report.csv
+│   │   ├── metrics_and_confusion_matrix.csv
+│   │   ├── ragas_summary.csv
+│   │   ├── repeated_evaluation_results.csv
+│   │   ├── results_summary.csv
+│   ├── Final_eval
+│   │   ├── GeminiCombinedGemini
+│   │   │   ├── classification_report.csv
+│   │   │   ├── confusion_matrix_report.csv
+│   │   │   ├── metrics_and_confusion_matrix.csv
+│   │   │   ├── ragas_summary.csv
+│   │   │   ├── repeated_evaluation_results.csv
+│   │   │   ├── repeated_evaluation_results_GeminiCombinedGemini.csv
+│   │   │   ├── repeated_evaluation_results_GeminiCombinedGemini_fixed.csv
+│   │   │   ├── results_summary.csv
+│   │   ├── OpenAIBM25Gemini
+│   │   │   ├── classification_report.csv
+│   │   │   ├── confusion_matrix_report.csv
+│   │   │   ├── metrics_and_confusion_matrix.csv
+│   │   │   ├── ragas_summary.csv
+│   │   │   ├── repeated_evaluation_results.csv
+│   │   │   ├── repeated_evaluation_results_OpenAIBM25Gemini.csv
+│   │   │   ├── repeated_evaluation_results_OpenAIBM25Gemini_fixed.csv
+│   │   │   ├── results_summary.csv
+│   │   ├── OpenAICombinedGemini
+│   │   │   ├── classification_report.csv
+│   │   │   ├── confusion_matrix_report.csv
+│   │   │   ├── metrics_and_confusion_matrix.csv
+│   │   │   ├── ragas_summary.csv
+│   │   │   ├── repeated_evaluation_results.csv
+│   │   │   ├── repeated_evaluation_results_OpenAICombinedGemini.csv
+│   │   │   ├── repeated_evaluation_results_OpenAICombinedGemini_fixed.csv
+│   │   │   ├── results_summary.csv
+│   │   ├── repeated_evaluation_results_MiniLMCombinedGemini.csv
+│   ├── GPT
+│   │   ├── GPT_results.csv
+│   │   ├── classification_report.csv
+│   │   ├── confusion_matrix.csv
+│   │   ├── evaluation_summary.csv
+│   │   ├── repeated_evaluation_results.csv
+│   │   ├── repeated_evaluation_results.csv.zip   [contains files inside]
+│   │   ├── repeated_evaluation_results_fixed.csv
+│   │   ├── repeated_evaluation_results_fixed.csv.zip   [contains files inside]
+│   │   ├── retrieval_strategy_comparison.csv
+│   ├── Gemini
+│   │   ├── Gemini_results.csv
+│   │   ├── repeated_evaluation_results.csv
+│   │   ├── repeated_evaluation_results_fixed.csv
+│   │   ├── repeated_evaluation_results_fixed.csv.zip   [contains files inside]
+│   ├── LLMs_Evaluation.xlsx
+│   ├── requirements.txt
+├── methodology.png
 ├── models
 │   ├── resnet50
 │   │   ├── multimodal_resnet50.py
@@ -136,6 +138,7 @@ Repository Structure:
 │   ├── pipeline_classification_and_treatment.ipynb
 ├── repo_structure.ipynb
 ├── repo_structure.txt
+├── requirements.txt
 ├── results
 │   ├── yolo_test
 │   │   ├── test_YOLO_orig(16batch)   [contains files inside]
@@ -150,7 +153,6 @@ Repository Structure:
 │   │   ├── test_lung_cancer_detection_ResNet50   [contains files inside]
 ├── src
 │   ├── augmentation
-│   │   ├── __pycache__   [contains files inside]
 │   │   ├── augmentation_utils.py
 │   │   ├── augmentation_yolo.py
 │   ├── modeling
@@ -211,6 +213,7 @@ Repository Structure:
 │   │   ├── utils
 │   │   │   ├── reproducibility.py
 │   ├── preprocessing
+│   │   ├── __pycache__   [contains files inside]
 │   │   ├── dataset_building.py
 │   │   ├── dicom_io.py
 │   │   ├── image_preprocessing.py
@@ -218,6 +221,7 @@ Repository Structure:
 │   │   │   ├── pdf_preprocessing.py
 │   │   │   ├── web_scraping_utils.py
 │   │   ├── rtstruct
+│   │   │   ├── __pycache__   [contains files inside]
 │   │   │   ├── rtstruct_batch_processing.py
 │   │   │   ├── rtstruct_io.py
 │   │   │   ├── rtstruct_parsing.py
@@ -228,8 +232,10 @@ Repository Structure:
 │   │   ├── xml_parsing.py
 │   │   ├── yolo_conversion.py
 │   ├── splitting
+│   │   ├── __pycache__   [contains files inside]
 │   │   ├── dataset_splitting.py
 │   ├── statistics
+│   │   ├── __pycache__   [contains files inside]
 │   │   ├── patient_label_statistics.py
 │   ├── training
 │   │   ├── ResNet50
@@ -246,10 +252,12 @@ Repository Structure:
 │   │   │   │   ├── ResNet50_final_model_TMN_dropout_15.pth
 │   │   │   │   ├── ResNet50_final_model_TMN_dropout_35.pth
 │   ├── utils
+│   │   ├── __pycache__   [contains files inside]
 │   │   ├── extract_number.py
 │   │   ├── file_utils.py
 │   │   ├── subject_utils.py
 │   ├── visualization
+│   │   ├── __pycache__   [contains files inside]
 │   │   ├── patient_visualization.py
 │   │   ├── plot_bboxes.py
 │   │   ├── yolo_visualization.py
