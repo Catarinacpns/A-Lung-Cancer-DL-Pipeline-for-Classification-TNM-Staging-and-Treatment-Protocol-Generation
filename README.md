@@ -36,6 +36,16 @@ The full repository structure is available in `repo_structure.txt`.
   <em>Framework Methodology: YOLOv8n, ResNet50 e Gemini 2.0 RAG</em>
 </p>
 
+
+> [!IMPORTANT]
+> **Full Pipeline Demonstration:** To see the complete end-to-end integration, run the notebook:
+> `pipeline_classification_and_treatment.ipynb`
+> This notebook demonstrates the full clinical workflow:
+> 1. **Input:** Raw CT Scan.
+> 2. **Detection:** YOLOv8 identifies the nodule with bounding boxes and confidence scores.
+> 3. **Diagnosis:** Classification of the cancer type.
+> 4. **Staging:** Multimodal ResNet50 predicts the T, N, and M stages.
+> 5. **Recommendation:** RAG system generates the specific treatment protocol based on medical guidelines.
 ---
 
 ## 3. Installation & Setup
