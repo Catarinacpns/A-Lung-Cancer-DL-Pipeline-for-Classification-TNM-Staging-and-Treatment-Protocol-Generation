@@ -15,7 +15,7 @@ This project presents an end-to-end multimodal framework integrating tumor detec
     - [5.5 General Utilities](#55-general-utilities)
 6. [Included Models](#6-included-models)
 7. [RAG Pipeline Technical Details](#7-rag-pipeline-technical-details)
-8. [Comprehensive Evaluation Metrics](#8-comprehensive-evaluation-metrics)
+8. [Evaluation Metrics](#8-evaluation-metrics)
 9. [Reproducibility](#9-reproducibility)
 
 ## 1. Project Overview
@@ -35,6 +35,7 @@ The full repository structure is available in `repo_structure.txt`.
   <br>
   <em>Framework Methodology: YOLOv8n, ResNet50 e Gemini 2.0 RAG</em>
 </p>
+
 ---
 
 ## 3. Installation & Setup
@@ -164,7 +165,7 @@ Core utilities used across all pipeline stages:
 
 ---
 
-## 8. Comprehensive Evaluation Metrics
+## 8. Evaluation Metrics
 
 ### Computer Vision & Staging (YOLOv8 & ResNet50)
 * **Detection (YOLO):**
