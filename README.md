@@ -16,7 +16,7 @@ The full repository structure is available in `repo_structure.txt`.
 
 ## Methodology Overview
 
-![Framework Methodology](methodology.png)
+[![Framework Methodology](methodology.png)](https://github.com/Catarinacpns/Lung-Cancer-Pipeline-for-Classification-and-Treatment-Protocol-Generation/blob/main/methodology.pdf)
 ---
 
 ## Installation
