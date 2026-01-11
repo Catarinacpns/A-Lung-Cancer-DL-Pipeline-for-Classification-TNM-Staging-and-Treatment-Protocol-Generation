@@ -15,6 +15,8 @@ This framework integrates all components:
 The full repository structure is available in `repo_structure.txt`.
 
 ## Methodology Overview
+
+```mermaid
 graph TD
     subgraph "Phase 1: Detection & Classification"
         In[CT Slice Input] --> Y(YOLOv8n Model)
@@ -25,7 +27,7 @@ graph TD
     subgraph "Phase 2: TNM Staging"
         Out1 --> R(ResNet50 + MLP)
         Out2 --> R
-        Demo[Patient Data: Age, Weight, Smoking] --> R
+        Demo[Patient Data: Age, Weight, Smoking Status] --> R
         R --> T[T Stage]
         R --> N[N Stage]
         R --> M[M Stage]
@@ -42,6 +44,7 @@ graph TD
 
     style Final fill:#d32f2f,color:#fff,stroke-width:2px
     style In fill:#f5f5f5
+```
 
 ---
 
