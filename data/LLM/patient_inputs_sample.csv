@@ -1,0 +1,37 @@
+T_stage;N_stage;M_stage;age;Gender;smoking_status;cancer_type
+T1a;N0;M0;53;Female;0;Adenocarcinoma
+T1b;N0;M0;72;Male;1;Adenocarcinoma
+T1c;N0;M0;45;Female;0;Squamus Cell Carcinoma
+T2a;N0;M0;54;Male;0;Large cell
+T2b;N0;M0;68;Male;1;Squamus Cell Carcinoma
+T1a;N1;M0;70;Female;0;Adenocarcinoma
+T1b;N1;M0;47;Female;1;Adenocarcinoma
+T1c;N1;M0;53;Female;0;Squamus Cell Carcinoma
+T2a;N1;M0;53;Female;0;Squamus Cell Carcinoma
+T2b;N1;M0;72;Male;1;Large cell
+T3;N0;M0;72;Male;1;Adenocarcinoma
+T1a;N2;M0;45;Male;0;Adenocarcinoma
+T1b;N2;M0;54;Female;0;Large cell
+T1c;N2;M0;68;Female;1;Adenocarcinoma
+T2a;N2;M0;70;Female;0;Adenocarcinoma
+T2b;N2;M0;53;Female;1;Squamus Cell Carcinoma
+T3;N1;M0;72;Male;1;Large cell
+T4;N0;M0;54;Male;0;Large cell
+T4;N1;M0;54;Male;0;Large cell
+T1a;N3;M0;70;Female;0;Adenocarcinoma
+T1b;N3;M0;47;Female;1;Adenocarcinoma
+T1c;N3;M0;53;Female;0;Squamus Cell Carcinoma
+T2a;N3;M0;45;Female;0;Squamus Cell Carcinoma
+T2b;N3;M0;54;Female;1;Adenocarcinoma
+T3;N2;M0;54;Male;0;Large cell
+T4;N2;M0;68;Male;1;Squamus Cell Carcinoma
+T3;N3;M0;52;Female;0;Large cell
+T4;N3;M0;57;Female;0;Squamus Cell Carcinoma
+T2a;N3;M1a;57;Male;0;Adenocarcinoma
+T2b;N3;M1b;58;Male;0;Adenocarcinoma
+T3;N3;M1c;50;Female;0;Squamus Cell Carcinoma
+T2;N3;M0;66;Female;0;Small Cell Carcinoma
+T2;N3;M0;53;Male;0;Small Cell Carcinoma
+T1a;N0;M0;73;Male;0;Small Cell Carcinoma
+T3;N1;M1;61;Male;0;Small Cell Carcinoma
+T3;N3;M1b;73;Female;0;Small Cell Carcinoma
