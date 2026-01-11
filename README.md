@@ -14,6 +14,35 @@ This framework integrates all components:
 
 The full repository structure is available in `repo_structure.txt`.
 
+## Methodology Overview
+graph TD
+    subgraph "Phase 1: Detection & Classification"
+        In[CT Slice Input] --> Y(YOLOv8n Model)
+        Y --> Out1[Cancer Type Label]
+        Y --> Out2[Tumor Bounding Boxes]
+    end
+
+    subgraph "Phase 2: TNM Staging"
+        Out1 --> R(ResNet50 + MLP)
+        Out2 --> R
+        Demo[Patient Data: Age, Weight, Smoking] --> R
+        R --> T[T Stage]
+        R --> N[N Stage]
+        R --> M[M Stage]
+    end
+
+    subgraph "Phase 3: Clinical Decision (RAG)"
+        T & N & M --> Prompt(Feed to Prompt)
+        Out1 --> Prompt
+        KB[(Knowledge Base)] --> DB[(Vector Database: ChromaDB)]
+        DB -- Gemini Embeddings --> RAG{RAG Engine}
+        Prompt --> RAG
+        RAG -- Gemini 2.0 Flash --> Final[Treatment Protocol]
+    end
+
+    style Final fill:#d32f2f,color:#fff,stroke-width:2px
+    style In fill:#f5f5f5
+
 ---
 
 ## Installation
