@@ -38,10 +38,10 @@ The full repository structure is available in `repo_structure.txt`.
 
 
 > [!IMPORTANT]
-> **Full Pipeline Demonstration:** To see the complete end-to-end integration, run the notebook:
+> **Full Pipeline Demonstration:** To see the complete end-to-end integration, check the notebook:
 > `pipeline_classification_and_treatment.ipynb`
 > This notebook demonstrates the full clinical workflow:
-> 1. **Input:** Raw CT Scan.
+> 1. **Input:** Raw CT Scan + patient data.
 > 2. **Detection:** YOLOv8 identifies the nodule with bounding boxes and confidence scores.
 > 3. **Diagnosis:** Classification of the cancer type.
 > 4. **Staging:** Multimodal ResNet50 predicts the T, N, and M stages.
