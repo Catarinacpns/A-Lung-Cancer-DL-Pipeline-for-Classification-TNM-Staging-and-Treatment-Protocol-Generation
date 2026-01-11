@@ -16,7 +16,7 @@ The full repository structure is available in `repo_structure.txt`.
 
 ## Methodology Overview
 
-![Framework Methodology](./methodology.pdf)
+![Framework Methodology](methodology.png)
 ---
 
 ## Installation
