@@ -16,57 +16,7 @@ The full repository structure is available in `repo_structure.txt`.
 
 ## Methodology Overview
 
-```mermaid
-graph TD
-    %% Node Definitions with Icons
-    Input[/"fa:fa-file-medical Input: CT Slices & Patient Data"\]
-    
-    subgraph Phase1 ["fa:fa-microscope Phase 1: Detection & Classification"]
-        YOLO["fa:fa-braille YOLOv8n Object Detection"]
-        Type["fa:fa-tag Cancer Type Prediction"]
-        BBox["fa:fa-expand Tumor Localization"]
-    end
-
-    subgraph Phase2 ["fa:fa-dna Phase 2: TNM Multimodal Staging"]
-        ResNet["fa:fa-network-wired ResNet50 + MLP Fusion"]
-        Stages["fa:fa-list-ol T, N, M Predicted Stages"]
-    end
-
-    subgraph Phase3 ["fa:fa-robot Phase 3: RAG Treatment Recommendation"]
-        Prompt["fa:fa-keyboard Prompt Engineering"]
-        Chroma[("fa:fa-database ChromaDB (Vector Store)")]
-        Gemini{"fa:fa-brain Gemini 2.0 Flash LLM"}
-        Output["fa:fa-file-prescription Final Treatment Protocol"]
-    end
-
-    %% Connections
-    Input --> Phase1
-    Input --> Phase2
-    
-    Phase1 --> YOLO
-    YOLO --> Type
-    YOLO --> BBox
-    
-    Type --> ResNet
-    BBox --> ResNet
-    
-    ResNet --> Stages
-    Stages --> Prompt
-    Type --> Prompt
-    
-    Chroma -.->|Retrieved Context| Gemini
-    Prompt --> Gemini
-    Gemini --> Output
-
-    %% Styling
-    style Phase1 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    style Phase2 fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-    style Phase3 fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
-    style Output fill:#d32f2f,color:#fff,stroke-width:4px
-    style Input fill:#fff3e0,stroke:#e65100
-    style Gemini fill:#fff,stroke:#000,stroke-width:2px
-```
-
+![Framework Methodology](./methodology.pdf)
 ---
 
 ## Installation
