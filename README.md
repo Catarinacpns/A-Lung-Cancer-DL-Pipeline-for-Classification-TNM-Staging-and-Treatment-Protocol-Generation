@@ -18,7 +18,7 @@ The full repository structure is available in `repo_structure.txt`.
 <p align="center">
   <img src="methodology.png" alt="Framework Methodology" width="800">
   <br>
-  <em>Arquitetura do Framework: YOLOv8n, ResNet50 e Gemini 2.0 RAG [cite: 1]</em>
+  <em>Framework Methodology: YOLOv8n, ResNet50 e Gemini 2.0 RAG</em>
 </p>
 ---
 
