@@ -1,0 +1,50 @@
+# --- Computer Vision & Deep Learning ---
+ultralytics==8.1.0
+torch==2.1.0
+torchvision==0.16.0
+efficientnet-pytorch==0.7.1
+albumentations==2.0.4
+opencv-python==4.10.0.84
+Pillow==9.4.0
+
+# --- LLM & RAG Frameworks ---
+google-generativeai==0.8.4
+openai==1.77.0
+langchain==0.3.23
+langchain-community==0.3.20
+langchain-openai==0.3.10
+chromadb==0.5.0
+rank-bm25==0.2.2
+sentence-transformers==3.0.0
+huggingface-hub==0.28.1
+
+# --- Evaluation Metrics ---
+ragas==0.1.0
+bert-score==0.3.13
+rouge-score==0.1.2
+scikit-learn==1.5.0
+nltk==3.8.1
+
+# --- Medical Imaging & Data Handling ---
+pydicom==2.4.4
+pylibjpeg==2.0.1
+pylibjpeg-libjpeg==2.2.0
+pylibjpeg-openjpeg==2.3.0
+SimpleITK==2.3.1
+dicompyler-core==0.5.6
+pandas==2.0.3
+numpy==1.26.4
+openpyxl==3.1.2
+
+# --- Visualization & Analysis ---
+matplotlib==3.7.1
+seaborn==0.12.2
+plotly==5.13.0
+tqdm==4.65.0
+
+# --- Environment & Utils ---
+python-dotenv==1.0.1
+PyYAML==6.0.1
+beautifulsoup4==4.12.2
+pdfplumber==0.11.5
+pypdfium2==4.30.1
