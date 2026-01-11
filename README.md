@@ -18,32 +18,53 @@ The full repository structure is available in `repo_structure.txt`.
 
 ```mermaid
 graph TD
-    subgraph "Phase 1: Detection & Classification"
-        In[CT Slice Input] --> Y(YOLOv8n Model)
-        Y --> Out1[Cancer Type Label]
-        Y --> Out2[Tumor Bounding Boxes]
+    %% Node Definitions with Icons
+    Input[/"fa:fa-file-medical Input: CT Slices & Patient Data"\]
+    
+    subgraph Phase1 ["fa:fa-microscope Phase 1: Detection & Classification"]
+        YOLO["fa:fa-braille YOLOv8n Object Detection"]
+        Type["fa:fa-tag Cancer Type Prediction"]
+        BBox["fa:fa-expand Tumor Localization"]
     end
 
-    subgraph "Phase 2: TNM Staging"
-        Out1 --> R(ResNet50 + MLP)
-        Out2 --> R
-        Demo[Patient Data: Age, Weight, Smoking Status] --> R
-        R --> T[T Stage]
-        R --> N[N Stage]
-        R --> M[M Stage]
+    subgraph Phase2 ["fa:fa-dna Phase 2: TNM Multimodal Staging"]
+        ResNet["fa:fa-network-wired ResNet50 + MLP Fusion"]
+        Stages["fa:fa-list-ol T, N, M Predicted Stages"]
     end
 
-    subgraph "Phase 3: Clinical Decision (RAG)"
-        T & N & M --> Prompt(Feed to Prompt)
-        Out1 --> Prompt
-        KB[(Knowledge Base)] --> DB[(Vector Database: ChromaDB)]
-        DB -- Gemini Embeddings --> RAG{RAG Engine}
-        Prompt --> RAG
-        RAG -- Gemini 2.0 Flash --> Final[Treatment Protocol]
+    subgraph Phase3 ["fa:fa-robot Phase 3: RAG Treatment Recommendation"]
+        Prompt["fa:fa-keyboard Prompt Engineering"]
+        Chroma[("fa:fa-database ChromaDB (Vector Store)")]
+        Gemini{"fa:fa-brain Gemini 2.0 Flash LLM"}
+        Output["fa:fa-file-prescription Final Treatment Protocol"]
     end
 
-    style Final fill:#d32f2f,color:#fff,stroke-width:2px
-    style In fill:#f5f5f5
+    %% Connections
+    Input --> Phase1
+    Input --> Phase2
+    
+    Phase1 --> YOLO
+    YOLO --> Type
+    YOLO --> BBox
+    
+    Type --> ResNet
+    BBox --> ResNet
+    
+    ResNet --> Stages
+    Stages --> Prompt
+    Type --> Prompt
+    
+    Chroma -.->|Retrieved Context| Gemini
+    Prompt --> Gemini
+    Gemini --> Output
+
+    %% Styling
+    style Phase1 fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    style Phase2 fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style Phase3 fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px
+    style Output fill:#d32f2f,color:#fff,stroke-width:4px
+    style Input fill:#fff3e0,stroke:#e65100
+    style Gemini fill:#fff,stroke:#000,stroke-width:2px
 ```
 
 ---
