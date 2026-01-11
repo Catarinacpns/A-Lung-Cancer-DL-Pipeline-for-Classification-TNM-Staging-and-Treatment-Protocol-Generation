@@ -26,7 +26,7 @@ The full repository structure is available in `repo_structure.txt`.
 
 ### 1. Clone the repository
 ```bash
-git clone <https://github.com/Catarinacpns/Lung-Cancer-Pipeline-for-Classification-and-Treatment-Protocol-Generation.git>
+git clone https://github.com/Catarinacpns/Lung-Cancer-Pipeline-for-Classification-and-Treatment-Protocol-Generation.git
 cd <repo_folder>
 ```
 
