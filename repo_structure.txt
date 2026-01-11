@@ -136,7 +136,6 @@ Repository Structure:
 │   │   ├── 02_LLM_evaluation.ipynb
 │   │   ├── env.txt
 │   ├── pipeline_classification_and_treatment.ipynb
-├── repo_structure.ipynb
 ├── repo_structure.txt
 ├── requirements.txt
 ├── results
