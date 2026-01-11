@@ -184,6 +184,9 @@ Core utilities used across all pipeline stages:
     * **Answer Relevancy:** How well the response addresses the prompt.
     * **Context Precision & Recall:** Evaluation of retrieval quality from the medical vector store.
 
+ > [!TIP]
+> **Results:** All LLM evaluation outputs, including RAGAS metrics and CSV reports, can be found in `evaluation/Final_eval/`.
+
 ---
 
 ## 9. Reproducibility
